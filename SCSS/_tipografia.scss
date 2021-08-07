@@ -1,0 +1,127 @@
+/*Resina*/
+        /*Light*/
+        @font-face {
+            font-family: "Resina-Light";
+            src: url("../Tipografia/Resina-Light.otf");
+        }
+
+        @mixin resinaLight($size,$color){
+            font-family: "Resina-Light";
+            font-size: $size;
+            color: $color;
+        }
+        /*Regular*/
+        @font-face {
+            font-family: "Resina-Regular";
+            src: url("../Tipografia/Resina-Regular.otf");
+        }
+
+        @mixin resinaRegular($size,$color){
+            font-family: "Resina-Regular";
+            font-size: $size;
+            color: $color;
+        }
+        /*Heavy*/
+        @font-face {
+            font-family: "Resina-Heavy";
+            src: url("../Tipografia/Resina-Heavy.otf");
+        }
+
+        @mixin resinaHeavy($size,$color){
+            font-family: "Resina-Heavy";
+            font-size: $size;
+            color: $color;
+        }
+/*Fin Resina*/
+/*SourceCodePro*/
+        /*Light*/
+        @font-face {
+            font-family: "scp-light";
+            src: url("../Tipografia/SourceCodePro-Light.ttf");
+        }
+
+        @mixin scpLight($size,$color){
+            font-family: "scp-light";
+            font-size: $size;
+            color: $color;
+        }
+        /*Light Italic*/
+        @font-face {
+            font-family: "scp-lightItalic";
+            src: url("../Tipografia/SourceCodePro-LightItalic.ttf");
+        }
+
+        @mixin scpLightItalic($size,$color){
+            font-family: "scp-lightItalic";
+            font-size: $size;
+            color: $color;
+        }
+        /*Medium*/
+        @font-face {
+            font-family: "scp-medium";
+            src: url("../Tipografia/SourceCodePro-Medium.ttf");
+        }
+
+        @mixin scpMedium($size,$color){
+            font-family: "scp-medium";
+            font-size: $size;
+            color: $color;
+        }
+        /*Bold*/
+        @font-face {
+            font-family: "scp-bold";
+            src: url("../Tipografia/SourceCodePro-Bold.ttf");
+        }
+
+        @mixin scpBold($size,$color){
+            font-family: "scp-bold";
+            font-size: $size;
+            color: $color;
+        }
+/*Fin SourceCodePro*/
+/*Akzidenz*/
+        /*Light*/
+        @font-face {
+            font-family: "akz-light";
+            src: url("../Tipografia/AkzidenzGrotesk-Light.otf");
+        }
+
+        @mixin akzLight($size,$color){
+            font-family: "akz-light";
+            font-size: $size;
+            color: $color;
+        }
+        /*Light Italic*/
+        @font-face {
+            font-family: "akz-lightItalic";
+            src: url("../Tipografia/AkzidenzGrotesk-LightItalic.otf");
+        }
+
+        @mixin akzLightItalic($size,$color){
+            font-family: "akz-lightItalic";
+            font-size: $size;
+            color: $color;
+        }
+        /*Medium*/
+        @font-face {
+            font-family: "akz-medium";
+            src: url("../Tipografia/AkzidenzGrotesk-Medium.otf");
+        }
+
+        @mixin akzMedium($size,$color){
+            font-family: "akz-medium";
+            font-size: $size;
+            color: $color;
+        }
+        /*Bold*/
+        @font-face {
+            font-family: "akz-bold";
+            src: url("../Tipografia/AkzidenzGrotesk-BoldExtended.otf");
+        }
+
+        @mixin akzBold($size,$color){
+            font-family: "akz-bold";
+            font-size: $size;
+            color: $color;
+        }
+/*Fin Akzidenz*/

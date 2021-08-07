@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/1cd30a895e.js" crossorigin="anonymous"></script>
+    <!--Hojas de estilo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="./CSS/estiloSASS.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMA</title>
+</head>
+<body>
+    <header>
+        <!--Navegador-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+
+            <!--Logo-->
+            <div class="logo">
+                <a href="./index.html"><img class="img-fluid" src="./Multimedia/logoHUMA.png" alt="HUMA"></a>
+            </div>
+            <!--Fin Logo-->
+            
+            <!--Central (Colapsa)-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Secciones-->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="./HTML/playlists.html">PLAYLISTS</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="./HTML/ayuda.html">AYUDA</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin Central (Colapsa)-->
+            
+            <!--Menú(Hamburguesa) + Buscador + Carrito-->
+                <!-- Simula los botones en el flujo -->
+                <div style="width: 122px;"></div>
+            <div class="navBotones">
+                <!--Menú-->
+                <div>
+                    <button id="menu" class="btn btnHN mx-1 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!--Buscador-->
+                <div>
+                    <button class="btn btnHN mx-1 my-2"><a href="./HTML/playlists.html"> <i class="fas fa-search"></i> </a></button>
+                </div>
+
+                <!--Carrito-->
+                <div>
+                    <button class="btn btnHN mx-1 my-2 carritoBoton position-relative"><a href="./HTML/carrito.html"> <i class="fas fa-shopping-cart"></i> </a></button>
+                </div>
+            </div>
+            <!--Fin Menú(Hamburguesa) + Buscador + Carrito-->
+            
+        </nav>
+        <!--Fin Navegador-->
+    </header>
+    
+    <!--Home-->
+    <section class="contenido">
+        <div class="home">
+            <div class="home__slides">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Multimedia/Slides/slideHUMAMobi.jpg" id="mobile" class="img-fluid w-100" alt="HUMA mobile">
+                        <img src="./Multimedia/Slides/slideHUMADesk.jpg" id="desktop" class="img-fluid w-100" alt="HUMA desktop">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Multimedia/Slides/slideGrabaMobi.jpg" id="mobile" class="img-fluid w-100" alt="Grabá tu propia playlist mobile">
+                        <img src="./Multimedia/Slides/slideGrabaDesk.jpg" id="desktop" class="img-fluid w-100" alt="Grabá tu propia playlist desktop">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="home__nuestrasPL container-fluid">
+                <div class="bannerNPL">
+                    <img class="img-fluid" src="./Multimedia/nuestrasPL/bannerNuestrasPL.jpg" alt="Nuestras Playlists">
+                </div>
+
+                <div class="listasNPL row justify-content-center">
+
+                    <div class="listasNPL__dale my-0 my-md-4 col-12 col-md-10 row">
+                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
+                            <h4 class="data__nombre">DALE</h4>
+                            <h5 class="data__formato">CASSETTE</h5>
+                            <h6 class="data__duracion">48min</h6>
+                        </div>
+
+                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$1720</h4>
+                      
+                        <div class="mb-3 mb-md-4 ms-4 ms-md-5 col-12 col-md-10">
+                            <button class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                <span>+ VER MÁS</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse container-fluid px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample1">
+                            <div class="lista">
+                                <p class="lista__titulo">Go</p>
+                                <p class="lista__info">The Chemical Brothers / 4:21</p>
+    
+                                <p class="lista__titulo">Under the influence</p>
+                                <p class="lista__info">The Chemical Brothers / 4:16</p>
+    
+                                <p class="lista__titulo">Extreme Ways</p>
+                                <p class="lista__info">Moby / 3:57</p>
+    
+                                <p class="lista__titulo">Born Splippy</p>
+                                <p class="lista__info">Underwold / 7:36</p>
+    
+                                <p class="lista__titulo">Is it always binary</p>
+                                <p class="lista__info">Soulwax / 3:29</p>
+    
+                                <p class="lista__titulo">I see you baby</p>
+                                <p class="lista__info">Groove Armada, Gramma Funk / 4:04</p>
+    
+                                <p class="lista__titulo">Made in China</p>
+                                <p class="lista__info">Higher Brothers, DJ Snake / 2:51</p>
+    
+                                <p class="lista__titulo">You came to party</p>
+                                <p class="lista__info">Meter Mobb, Too $hort / 3:46</p>
+    
+                                <p class="lista__titulo">Cop Drama</p>
+                                <p class="lista__info">Clearside / 2:51</p>
+    
+                                <p class="lista__titulo">BANDZ</p>
+                                <p class="lista__info">BIG MAKK / 3:44</p>
+    
+                                <p class="lista__titulo">Quema</p>
+                                <p class="lista__info">Sotomayor / 3:26</p>
+    
+                                <p class="lista__titulo">We Don't Wanna Dance</p>
+                                <p class="lista__info">Jane. / 3:30</p>
+                            </div>
+                        </div>
+
+                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
+                            <img class="img-fluid" src="./Multimedia/nuestrasPL/dale.png" alt="Cassette de Dale">
+                        </div>
+                    </div>
+
+                    <div class="listasNPL__itsBB my-0 my-md-4 col-12 col-md-10 row">
+                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
+                            <h4 class="data__nombre">IT'S BRAINY, BITCH</h4>
+                            <h5 class="data__formato">CD</h5>
+                            <h6 class="data__duracion">38min</h6>
+                        </div>
+
+                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$1200</h4>
+                        
+                        <div class="mb-3 mb-md-4 mx-4 mx-md-5 col-12 col-md-10">
+                            <button id="dark" class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                <span>+ VER MÁS</span>
+                            </button>
+                        </div>
+                        
+                        <div class="collapse container-fluid px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample2">
+                            <div class="lista">
+                                <p class="lista__titulo">A Brain in a Bottle</p>
+                                <p class="lista__info">Thom Yorke / 4:40</p>
+    
+                                <p class="lista__titulo">Insane in the Brain</p>
+                                <p class="lista__info">Black Sunday / 3:28</p>
+    
+                                <p class="lista__titulo">Brain Damage</p>
+                                <p class="lista__info">Pink Floyd / 3:46</p>
+    
+                                <p class="lista__titulo">Banana Brain</p>
+                                <p class="lista__info">Die Antwoord / 4:48</p>
+    
+                                <p class="lista__titulo">Porcelain</p>
+                                <p class="lista__info">Moby / 3:58</p>
+    
+                                <p class="lista__titulo">Teardrop</p>
+                                <p class="lista__info">Massive Attack / 5:30</p>
+    
+                                <p class="lista__titulo">Brian Cycles</p>
+                                <p class="lista__info">Radio Moscow / 3:23</p>
+    
+                                <p class="lista__titulo">Default</p>
+                                <p class="lista__info">Atom For Peace / 5:15</p>
+    
+                                <p class="lista__titulo">Brain Washing</p>
+                                <p class="lista__info">Mike Maldonado / 2:37</p>
+    
+                                <p class="lista__titulo">Fugu Kiss</p>
+                                <p class="lista__info">Rone / 4:46</p>
+                            </div>
+                        </div>
+
+                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
+                            <img class="img-fluid" src="./Multimedia/nuestrasPL/itsBB.png" alt="CD de It's Brainy Bitch">
+                        </div>
+                    </div>
+
+                    <div class="listasNPL__togas my-0 my-md-4 col-12 col-md-10 row">
+                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
+                            <h4 class="data__nombre">TOGAS</h4>
+                            <h5 class="data__formato">VINILO</h5>
+                            <h6 class="data__duracion">13min</h6>
+                        </div>
+
+                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$4200</h4>
+
+                        <div class="mb-3 mb-md-4 ms-4 ms-md-5 col-12 col-md-10">
+                            <button class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                <span>+ VER MÁS</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample3">
+                            <div class="lista">
+                                <p class="lista__titulo">Smelly Cat</p>
+                                <p class="lista__info">Friends / 1:03</p>
+    
+                                <p class="lista__titulo">Hey gata fina</p>
+                                <p class="lista__info">Srita Bimbo / 2:13</p>
+    
+                                <p class="lista__titulo">Rock del gato</p>
+                                <p class="lista__info">Ratones Paranoicos / 3:01</p>
+    
+                                <p class="lista__titulo">Born Splippy</p>
+                                <p class="lista__info">Underwold / 7:36</p>
+    
+                                <p class="lista__titulo">Gatos los tres</p>
+                                <p class="lista__info">Miau Trío, Irribaren / 2:32</p>
+    
+                                <p class="lista__titulo">Cool Cat</p>
+                                <p class="lista__info">Queen / 3:28</p>
+                            </div>
+                        </div>
+                        
+                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
+                            <img class="img-fluid" src="./Multimedia/nuestrasPL/togas.png" alt="Vinilo de Togas">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </section>
+    <!--Fin Home-->
+
+    <!--Footer-->
+    <footer class="pie container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <!--Nuestros datos-->
+            <div class="pie__datos col-12 col-sm-6 col-lg-12 px-3 py-3 m-0">
+                <div class="cont">
+                    <!--Ubicación-->
+                    <div class="dat m-3">
+                        <i class="fas fa-map-pin m-1"></i>
+                        <p class="m-1">Humboldt 254 - CABA, Argentina</p>
+                    </div>
+                    <!--Horarios de atención-->
+                    <div class="dat m-3">
+                        <i class="far fa-clock m-1"></i>
+                        <p class="m-1">Lunes a Viernes - 11am a 19pm</p>
+                    </div>
+                    <!--Teléfono-->
+                    <div class="dat m-3">
+                        <i class="fas fa-phone m-1"></i>
+                        <p class="m-1">0810-666-6969</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Suscribirse-->
+            <div class="pie__sucribir col-12 col-sm-6 col-lg-4 m-0 px-2 py-3">
+                <p class="pie__suscribir--title mb-2">Suscribite al Newsletter!</p>
+
+                <div class="pie__suscribir--email">
+                    <input class="rounded-pill" type="text" placeholder="Tu email..." aria-label="email" aria-describedby="email">
+                    <button class="btn btnHN rounded-circle" type="button" id="email"><i id="suscribe" class="fas fa-envelope-open-text"></i></button>
+                </div>
+            </div>
+
+            <!--Logo-->
+            <div class="pie__logo col-12 col-lg-4">
+                <img src="./Multimedia/logoHUMA.png" alt="logo HUMA">
+            </div>
+
+            <!--Redes-->
+            <div class="pie__redes col-12 col-lg-4 py-2">
+                <!--Instagram-->
+                <button class="btn btnHN rounded-circle mx-2">
+                    <a href="https://www.instagram.com/"><i class="icon fab fa-instagram"></i></a>
+                </button>
+                <!--Facebook-->
+                <button id="fb" class="btn btnHN rounded-circle mx-2">
+                    <a href="https://www.facebook.com/"><i class="icon fab fa-facebook-f"></i></a>
+                </button>
+                <!--Email-->
+                <button class="btn btnHN rounded-circle mx-2">
+                    <a href="https://mail.google.com/mail"><i class="icon far fa-envelope"></i></a>
+                </button>
+            </div>
+            
+            <!--Derechos-->
+            <div class="pie__derechos col-12 m-0 py-3">
+                <i class="fas fa-copyright"></i>
+                <p class="m-0">2021 HUMA MusicLAB algunos derechos reservados</p>
+            </div>
+        </div>
+        
+    </footer>
+    <!--Fin Footer-->
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./JS/totalCartItems.js"></script>
+    <script src="./JS/home.js"></script>
+    
+</body>
+</html>

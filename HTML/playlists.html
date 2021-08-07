@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/1cd30a895e.js" crossorigin="anonymous"></script>
+    <!--Hojas de estilo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="../CSS/estiloSASS.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMA - Playlists</title>
+</head>
+<body>
+    <header>
+        <!--Navegador-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+
+            <!--Logo-->
+            <div class="logo">
+                <a href="../index.html"><img class="img-fluid" src="../Multimedia/logoHUMA.png" alt="HUMA"></a>
+            </div>
+            <!--Fin Logo-->
+            
+            <!--Central (Colapsa)-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Secciones-->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" href="./playlists.html">PLAYLISTS</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="./ayuda.html">AYUDA</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin Central (Colapsa)-->
+                
+            <!--Menú(Hamburguesa) + Buscador + Carrito-->
+                <!-- Simula los botones en el flujo -->
+                <div style="width: 122px;"></div>
+            <div class="navBotones">
+                <!--Menú-->
+                <div>
+                    <button id="menu" class="btn btnHN mx-1 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!--Buscador-->
+                <div>
+                    <button class="btn btnHN mx-1 my-2"><a href="./playlists.html"> <i class="fas fa-search"></i> </a></button>
+                </div>
+
+                <!--Carrito-->
+                <div class="cart__icon">
+                    <button class="btn btnHN mx-1 my-2 carritoBoton position-relative"><a href="./carrito.html"> <i class="fas fa-shopping-cart"></i> </a></button>
+                </div>
+            </div>
+            <!--Fin Menú(Hamburguesa) + Buscador + Carrito-->
+
+            <!--Aviso de añadido al carrito-->
+            <div class="aviso position-absolute top-100 end-0">
+                <span>Añadido!</span>
+            </div>
+            <!--Fin Aviso de añadido al carrito-->
+
+        </nav>
+        <!--Fin Navegador-->
+    </header>
+    
+    <!--Playlists-->
+    <section class="contenido">
+        <div class="playlists pt-3 container-fluid row justify-content-center align-items-center">
+            <!-- Buscador -->
+            <form action="" class="buscador col-12 my-4 my-lg-5 d-flex justify-content-center">
+                <input id="busqueda" class="mx-2 rounded-pill" type="text" placeholder="Buscar playlist...">
+                <button id="cancelar" class="mx-3 p-1 btn btnBuscar rounded-circle" type="button" aria-label="Cancelar"><i class="far fa-times-circle"></i></button>
+            </form>
+
+            <!-- Filtro por duración -->
+            <form class="col-10 col-md-5 col-lg-4 mx-4 my-3 my-lg-4">
+                <select id="fxD" class="form-select rounded-pill" aria-label="Filtrar por duración...">
+                    <option value="0" selected>Filtrar por duración...</option>
+                    <option value="1">Shortplay</option>
+                    <option value="2">Longplay</option>
+                    <option value="3">Extendedplay</option>
+                </select>
+            </form>
+
+            <!-- Ordenar por... -->
+            <form class="col-10 col-md-5 col-lg-4 mx-4 my-3 my-lg-4">
+                <select id="ordenar" class="form-select rounded-pill" aria-label="Ordenar por...">
+                    <option value="0" selected>Ordenar por...</option>
+                    <option value="1">A - Z</option>
+                    <option value="2">Z - A</option>
+                    <option value="3">Menor duración</option>
+                    <option value="4">Mayor duración</option>
+                </select>
+            </form>
+
+            <!-- Tienda -->
+            <div id="tienda" class="articulos col-12 row justify-content-evenly">
+                <!-- Imprime con JS -->
+            </div>
+
+        </div>
+    </section>
+    <!--Fin Playlists-->
+
+    <!--Footer-->
+    <footer class="pie container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <!--Nuestros datos-->
+            <div class="pie__datos col-12 col-sm-6 col-lg-12 px-3 py-3 m-0">
+                <div class="cont">
+                    <!--Ubicación-->
+                    <div class="dat m-3">
+                        <i class="fas fa-map-pin m-1"></i>
+                        <p class="m-1">Humboldt 254 - CABA, Argentina</p>
+                    </div>
+                    <!--Horarios de atención-->
+                    <div class="dat m-3">
+                        <i class="far fa-clock m-1"></i>
+                        <p class="m-1">Lunes a Viernes - 11am a 19pm</p>
+                    </div>
+                    <!--Teléfono-->
+                    <div class="dat m-3">
+                        <i class="fas fa-phone m-1"></i>
+                        <p class="m-1">0810-666-6969</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Suscribirse-->
+            <div class="pie__sucribir col-12 col-sm-6 col-lg-4 m-0 px-2 py-3">
+                <p class="pie__suscribir--title mb-2">Suscribite al Newsletter!</p>
+
+                <div class="pie__suscribir--email">
+                    <input class="rounded-pill" type="text" placeholder="Tu email..." aria-label="email" aria-describedby="email">
+                    <button class="btn btnHN rounded-circle" type="button" id="email"><i id="suscribe" class="fas fa-envelope-open-text"></i></button>
+                </div>
+            </div>
+
+            <!--Logo-->
+            <div class="pie__logo col-12 col-lg-4">
+                <img src="../Multimedia/logoHUMA.png" alt="logo HUMA">
+            </div>
+
+            <!--Redes-->
+            <div class="pie__redes col-12 col-lg-4 py-2">
+                <!--Instagram-->
+                <button class="btn btnHN rounded-circle mx-2">
+                    <a href="https://www.instagram.com/"><i class="icon fab fa-instagram"></i></a>
+                </button>
+                <!--Facebook-->
+                <button id="fb" class="btn btnHN rounded-circle mx-2">
+                    <a href="https://www.facebook.com/"><i class="icon fab fa-facebook-f"></i></a>
+                </button>
+                <!--Email-->
+                <button class="btn btnHN rounded-circle mx-2">
+                    <a href="https://mail.google.com/mail"><i class="icon far fa-envelope"></i></a>
+                </button>
+            </div>
+            
+            <!--Derechos-->
+            <div class="pie__derechos col-12 m-0 py-3">
+                <i class="fas fa-copyright"></i>
+                <p class="m-0">2021 HUMA MusicLAB algunos derechos reservados</p>
+            </div>
+        </div>
+        
+    </footer>
+    <!--Fin Footer-->
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <script src="../JS/playlists.js"></script>
+    <script src="../JS/totalCartItems.js"></script>
+    <script src="../JS/app.js"></script>
+    
+    
+</body>
+</html>

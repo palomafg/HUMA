@@ -1,0 +1,887 @@
+/*Tipografía*/
+@import "tipografia";
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: #6B384C;
+}
+
+.logo{
+    width: 80px;
+    margin: 0px 15px;
+}
+
+.navbar-nav{
+    padding-top: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    width: 125px;
+
+    .nav-link{
+        @include resinaLight(18px,#FFD352);
+        text-align: center;
+
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .8s;
+    }
+    .nav-link:hover, .nav-link:focus{
+        color: #fadc80;
+        background-size: 100% 2px;
+    }
+
+    .active{
+        color: #fadc80;
+        background-size: 100% 2px;
+    }
+}
+
+.btnHN{
+    font-size: 110%;
+    color: #FFD352;
+    a{
+        text-decoration: none;
+        color: #FFD352;
+    }
+}
+
+.btnHN:hover{
+    color: #fadc80;
+}
+
+.cantidadCarrito{
+    @include resinaLight(20px,#FFD352);
+}
+
+.aviso{
+    display: none;
+    margin: 5px;
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px 100px / 120px;
+    text-align: center;
+    @include resinaLight(18px,#fadc80);
+    background-color: #6B384C;
+}
+
+.navBotones{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin-right: 10px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 23px;
+}
+
+.contenido{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    background-color: #44202d;
+
+    .home{
+        &__slides{
+            #mobile{
+                display: block;
+                height: auto;
+            }
+            #desktop{
+                display: none;
+                height: auto;
+            }
+        }
+
+        &__nuestrasPL{
+            height: auto;
+            padding: 0px;
+            background-image: url("../Multimedia/nuestrasPL/fondoNuestrasPL.jpg");
+
+            .listasNPL{
+                .data{
+                    &__nombre{
+                        font-size: 25px;
+                        font-family: "Resina-Regular";
+                    }
+    
+                    &__formato{
+                        font-size: 20px;
+                        font-family: "scp-medium";
+                    }
+    
+                    &__duracion{
+                        font-size: 15px;
+                        font-family: "scp-medium";
+                    }
+                }
+
+                .precio{
+                    text-align: end;
+                    font-size: 30px;
+                    font-family: "scp-medium";
+                }
+                
+                .verMas{
+                    width: 120px;
+                    text-align: start;
+                    font-size: 15px;
+                    font-family: "scp-medium";
+                    color: #FFD352;
+
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .8s;
+                }
+
+                .verMas:hover, .verMas:focus{
+                    background-size: 100% 2px;
+                }
+
+                #dark{
+                    color: #5a2b3c;
+                }
+
+                .lista{
+                    &__titulo{
+                        font-size: 14px;
+                        font-family: "scp-medium";
+                    }
+
+                    &__info{
+                        font-size: 12px;
+                        font-family: "scp-light";
+                    }
+                }
+
+                &__dale{
+                    background-color: #854e66;
+                    color: #FFD352;
+                }
+
+                &__itsBB{
+                    background-color: #FFD352;
+                    color: #5a2b3c;
+                }
+
+                &__togas{
+                    background-color: #854e66;
+                    color: #FFD352;
+                }
+            }
+        }
+    }
+
+    // Contenido de Playlists.html
+    .playlists{
+        width: 100%;
+        height: auto;
+        --bs-gutter-x: 0px;
+        background-image: url('../Multimedia/playlists/bckgrd.jpg');
+        background-repeat: repeat;
+
+        // Buscador con botones
+        .buscador{
+            #busqueda{
+                width: 60%;
+                height: 40px;
+                padding-left: 15px;
+                border: 1px solid #FFD352;
+                background-color: #44202d;
+                @include resinaLight(20px,#FFD352);
+            }
+
+            .btnBuscar{
+                font-size: 130%;
+                color: #FFD352;
+                a{
+                    text-decoration: none;
+                    color: #FFD352;
+                }
+            }
+        }
+
+        // Select para filtrar
+        #fxD{
+            height: 40px;
+            border: 1px solid #FFD352;
+            background-color: #44202d;
+            @include resinaLight(15px,#FFD352);
+
+            option{
+                font-family: monospace;
+            }
+        }
+
+        // Select para ordenar
+        #ordenar{
+            height: 40px;
+            border: 1px solid #FFD352;
+            background-color: #44202d;
+            @include resinaLight(15px,#FFD352);
+
+            option{
+                font-family: monospace;
+            }
+        }
+
+        // Productos a la venta
+        .articulos{
+            height: auto;
+            min-height: 900px;
+            
+            // Estilo nuestras playlists
+            #daleItem{
+                background-color: #854e66;
+                color: #FFD352;
+
+                .sumarCarrito{
+                    background-color: #FFD352;
+                    color: #854e66;
+                }
+                .sumarCarrito:hover{
+                    background-color: #854e66;
+                    color: #FFD352;
+                }
+            }
+            #itsBBItem{
+                background-color: #FFD352;
+                color: #5a2b3c;
+            }
+            #togasItem{
+                background-color: #854e66;
+                color: #FFD352;
+
+                .sumarCarrito{
+                    background-color: #FFD352;
+                    color: #854e66;
+                }
+                .sumarCarrito:hover{
+                    background-color: #854e66;
+                    color: #FFD352;
+                }
+            }
+            // Estilo item individual
+            .item{
+                border-radius: 10px;
+                background-color: #FFD352;
+                color: #6B384C;
+
+                .pic{
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+                #dalePic{
+                    border-radius: 0%;
+                }
+                #itsBBPic{
+                    border-radius: 0%;
+                }
+                #togasPic{
+                    border-radius: 0%;
+                }
+
+                .data{
+                    &__nombre{
+                        text-align: start;
+                        font-size: 23px;
+                        font-family: "Resina-Regular";
+                    }
+    
+                    &__formato{
+                        font-size: 18px;
+                        font-family: "scp-medium";
+                    }
+                    &__formatoSelect{
+                        background-color: #FFD352;
+                        border: 2px solid #6B384C;
+                        color: #6B384C;
+                        font-family: "scp-medium",monospace;
+                        font-size: 18px;
+
+                        option{
+                            text-align: center;
+                            font-family: monospace;
+                        }
+                    }
+    
+                    &__duracion{
+                        font-size: 15px;
+                        font-family: "scp-medium";
+                    }
+
+                    .precio{
+                        text-align: end;
+                        font-size: 28px;
+                        font-family: "scp-medium";
+                    }
+
+                    .sumarCarrito{
+                        width: 75px;
+                        height: 75px;
+                        background-color: #6B384C;
+                        color: #FFD352;
+                        font-size: 40px;
+                    }
+                    .sumarCarrito:hover{
+                        background-color: #FFD352;
+                        color: #6B384C;
+                    }
+                }
+
+                // .lista{
+                //     &__titulo{
+                //         font-size: 14px;
+                //         font-family: "scp-medium";
+                //     }
+
+                //     &__info{
+                //         font-size: 12px;
+                //         font-family: "scp-light";
+                //     }
+                // }
+
+            }        
+            // Fin Estilo item individual    
+        }
+        // Fin Productos a la venta
+    }
+    // Fin Contenido de Playlists.html
+
+    // Contenido Carrito
+    .carrito{
+        background-image: url("../Multimedia/fondoCarrito.jpg");
+        background-repeat: repeat;
+
+        .carrito__cierre{
+
+            .tuCompra{
+                @include resinaRegular(25px,#fadc80);
+            }
+
+            .contenedorItemsCarrito{
+
+                .itemCarrito{
+                    height: auto;
+                    background-color: #44202d;
+                    border: 1px solid #fadc80;
+                    border-radius: 5px;
+
+                    &Portada{
+                        border-radius: 30%;
+                    }
+
+                    &Nombre{
+                        height: auto;
+                        width: auto;
+                        margin-bottom: 10px;
+                        @include resinaRegular(17px,#fadc80);
+                        text-align: center;
+                    }
+
+                    &Formato{
+                        height: auto;
+                        width: auto;
+                        margin-bottom: 10px;
+                        @include resinaLight(12px,#fadc80);
+                    }
+
+                    &Precio{
+                        height: auto;
+                        width: auto;
+                        @include scpMedium(12px,#fadc80);
+                    }
+
+                    &Cantidad{
+                        height: 30px;
+                        width: 45px;
+                        padding: 5px 7px;
+                        background-color: #44202d;
+                        @include scpMedium(13px,#fadc80);
+                        border: 1px solid #fadc80;
+                    }
+
+                    .botonBorrar{
+                        height: 30px;
+                        width: 30px;
+                        font-size: 20px;
+                        color: #fadc80;
+                        text-align: center;
+                    }
+                }
+
+                .sinProductos{
+                    height: 350px;
+                    @include resinaLight(25px,#fadc80);
+                }
+            }
+
+            .cierre{
+                border-top: 1px solid #fadc80;
+                height: 60px;
+                background-color: #44202d;
+
+                .totalTxt{
+                    @include scpBold(11px,#fadc80);
+                }
+
+                .totalCarrito{
+                    @include scpBold(12px,#fadc80);
+                }
+
+                .botonFinalizarCompra{
+                    width: 100px;
+                    height: 30px;
+                    margin: 0px;
+                    padding: 0px;
+                    background-color: #6B384C;
+                    @include scpBold(13px,#FFD352);
+                    border: 1px solid #FFD352;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    // Fin Contenido Carrito
+
+    // Contenido de ayuda
+    .ayuda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Banner de Preguntas Frecuentes
+        .bannerFAQ{
+            width: 100%;
+        }
+
+        // Preguntas y respuestas
+        .infoFAQ{
+            width: 100%;
+
+            .accordion{
+                width: 100%;
+
+                .accordion-item{
+                    border: none;
+
+                    .accordion-header{
+
+                        .accordion-button{
+                            background-color: #521b2f;
+                            @include resinaRegular(20px,#FFD352);
+                        }
+
+                        .accordion-button:not(.collapsed)::after{
+                            background-image: url("../Multimedia/Ayuda/masDark.png");
+                        }
+
+                        .accordion-button::after{
+                            width: 2rem;
+                            height: 2rem;
+                            background-size: 2rem;
+                            background-image: url("../Multimedia/Ayuda/masLight.png");
+                        }
+                    }
+
+                    .accordion-body{
+                        background-color: #44202D;
+                        @include scpMedium(13px,#FFD352);
+
+                        .mapa{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .consultas{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-around;
+
+                        .btn{
+                            width: 45px;
+                            height: 45px;
+                
+                            border: 1.5px solid #FFD352;
+                            background-color: #44202D;
+                
+                            text-align: center;
+                
+                            .icon{
+                                text-decoration: none;
+                                color: #FFD352;
+                            }
+                        }
+
+                        .btn:hover{
+                            border-color: #ffe597;
+                            .icon{
+                                color: #ffe597;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+        // Fin Preguntas y respuestas
+    }
+    // Fin Contenido de ayuda
+}
+
+.pie{
+    background-color: #6B384D;
+
+    &__datos{
+        height: auto;
+
+        @include scpMedium(85%,#FFD352);
+        text-align: start;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin: 5px 0px 5px 0px;
+        }
+        .dat{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+    }
+
+    &__suscribir{
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        &--title{
+            @include scpBold(100%,#FFD352);
+            text-align: center;
+        }
+
+        &--email{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            input{
+                width: 190px;
+                height: 35px;
+                border: 1px solid #FFD352;
+                background-color: #6B384D;
+                padding-left: 15px;
+                @include scpMedium(90%,#E2AE28);
+            }
+
+            .btn{
+                width: 35px;
+                height: 35px;
+                background-color: #FFD352;
+                margin-left: 10px;
+                line-height: 0;
+                padding: 5px 8px;
+
+                #suscribe{
+                    color: #6B384D;
+                    font-size: 90%;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+            
+            .btn:hover{
+                background-color: #6B384D;
+                border: 1px solid #FFD352;
+
+                #suscribe{
+                    color: #fadc80;
+                }
+            }
+        }
+    }
+
+    &__logo{
+        width: 183px;
+        height: 101px;
+
+        margin: 30px 50px 20px 50px;
+    }
+
+    &__redes{
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        font-size: 150%;
+
+        .btn{
+            width: 53px;
+            height: 53px;
+
+            border: 2px solid #FFD352;
+            background-color: #FFD352;
+
+            text-align: center;
+
+            .icon{
+                text-decoration: none;
+                color: #6B384D;
+            }
+        }
+
+        .btn:hover{
+            background-color: #6B384D;
+            .icon{
+                color: #FFD352;
+            }
+        }
+    }
+
+    &__derechos{
+        height: auto;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+
+        @include scpMedium(60%,#e2bc48);
+        
+        i{
+            font-size: 80%;
+            margin-right: 4px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:992px){
+
+    .lgctrl{
+        width: 82%;
+    }
+    
+    .logo{
+        width: 100px;
+        margin: 0px 5px 0px 15px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-collapse{
+        width: 600px;
+        flex-grow: 0;
+    }
+
+    .navbar-nav{
+        padding-top: 0px;
+    }
+
+    .nav-item{
+        width: auto;
+
+        .nav-link{
+            font-size: 20px;
+        }
+    }
+
+    .navBotones{
+        margin: 8px;
+
+        #menu{
+            display: none;
+        }
+    }
+
+    .contenido{
+        margin-top: 71px;
+
+        .home{
+            &__slides{
+                #mobile{
+                    display: none;
+                }
+                #desktop{
+                    display: block;
+                }
+            }
+
+            &__nuestrasPL{
+
+                .listasNPL{
+                    .data{
+                        &__nombre{
+                            font-size: 35px;
+                        }
+
+                        &__formato{
+                            font-size: 30px;
+                        }
+
+                        &__duracion{
+                            font-size: 25px;
+                        }
+                    }
+
+                    .precio{
+                        font-size: 45px;
+                    }
+
+                    .verMas{
+                        display: none;
+                    }
+
+                    .collapse{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .lista{
+                        text-align: start;
+
+                        p{
+                            margin-bottom: 4px;
+                        }
+
+                        &__titulo{
+                            font-size: 17px;
+                        }
+
+                        &__info{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .playlists{
+
+            .buscador{
+                #busqueda{
+                    width: 35%;
+                }
+                
+                .btnBuscar{
+                    font-size: 150%;
+                }
+            }
+        }
+
+        // Contenido Carrito
+        .carrito{
+
+            .carrito__cierre{
+
+                .tuCompra{
+                    @include resinaRegular(60px,#fadc80);
+                }
+
+                .contenedorItemsCarrito{
+                    
+                    .itemCarrito{
+                        border-width: 2px;
+                        border-radius: 7px;
+
+                        &Nombre{
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                        }
+
+                        &Formato{
+                            margin-bottom: 15px;
+                            font-size: 17px;
+                        }
+
+                        &Precio{
+                            font-size: 17px;
+                        }
+
+                        &Cantidad{
+                            height: 27px;
+                            width: 55px;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .sinProductos{
+                        height: 500px;
+                        font-size: 30px;
+                    }
+                }
+
+                .cierre{
+                    border-width: 2px;
+                    height: 150px;
+
+                    .totalTxt{
+                        font-size: 20px;
+                    }
+
+                    .totalCarrito{
+                        font-size: 20px;
+                    }
+
+                    .botonFinalizarCompra{
+                        width: 145px;
+                        height: 45px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .ayuda{
+            .bannerFAQ{
+                width: 75%;
+            }
+    
+            .infoFAQ{
+                width: 75%;
+            }    
+        }
+    }
+    
+    .pie{
+        &__datos{
+            .cont{
+                width: 100%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+}

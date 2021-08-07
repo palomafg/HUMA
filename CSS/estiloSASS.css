@@ -1,0 +1,622 @@
+@charset "UTF-8";
+/*Tipografía*/
+/*Resina*/
+/*Light*/
+@font-face {
+  font-family: "Resina-Light";
+  src: url("../Tipografia/Resina-Light.otf"); }
+
+/*Regular*/
+@font-face {
+  font-family: "Resina-Regular";
+  src: url("../Tipografia/Resina-Regular.otf"); }
+
+/*Heavy*/
+@font-face {
+  font-family: "Resina-Heavy";
+  src: url("../Tipografia/Resina-Heavy.otf"); }
+
+/*Fin Resina*/
+/*SourceCodePro*/
+/*Light*/
+@font-face {
+  font-family: "scp-light";
+  src: url("../Tipografia/SourceCodePro-Light.ttf"); }
+
+/*Light Italic*/
+@font-face {
+  font-family: "scp-lightItalic";
+  src: url("../Tipografia/SourceCodePro-LightItalic.ttf"); }
+
+/*Medium*/
+@font-face {
+  font-family: "scp-medium";
+  src: url("../Tipografia/SourceCodePro-Medium.ttf"); }
+
+/*Bold*/
+@font-face {
+  font-family: "scp-bold";
+  src: url("../Tipografia/SourceCodePro-Bold.ttf"); }
+
+/*Fin SourceCodePro*/
+/*Akzidenz*/
+/*Light*/
+@font-face {
+  font-family: "akz-light";
+  src: url("../Tipografia/AkzidenzGrotesk-Light.otf"); }
+
+/*Light Italic*/
+@font-face {
+  font-family: "akz-lightItalic";
+  src: url("../Tipografia/AkzidenzGrotesk-LightItalic.otf"); }
+
+/*Medium*/
+@font-face {
+  font-family: "akz-medium";
+  src: url("../Tipografia/AkzidenzGrotesk-Medium.otf"); }
+
+/*Bold*/
+@font-face {
+  font-family: "akz-bold";
+  src: url("../Tipografia/AkzidenzGrotesk-BoldExtended.otf"); }
+
+/*Fin Akzidenz*/
+img {
+  width: 100%;
+  height: auto; }
+
+.navbar {
+  background-color: #6B384C; }
+
+.logo {
+  width: 80px;
+  margin: 0px 15px; }
+
+.navbar-nav {
+  padding-top: 20px;
+  width: auto;
+  justify-content: center;
+  align-items: center; }
+
+.nav-item {
+  width: 125px; }
+  .nav-item .nav-link {
+    font-family: "Resina-Light";
+    font-size: 18px;
+    color: #FFD352;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .8s; }
+  .nav-item .nav-link:hover, .nav-item .nav-link:focus {
+    color: #fadc80;
+    background-size: 100% 2px; }
+  .nav-item .active {
+    color: #fadc80;
+    background-size: 100% 2px; }
+
+.btnHN {
+  font-size: 110%;
+  color: #FFD352; }
+  .btnHN a {
+    text-decoration: none;
+    color: #FFD352; }
+
+.btnHN:hover {
+  color: #fadc80; }
+
+.cantidadCarrito {
+  font-family: "Resina-Light";
+  font-size: 20px;
+  color: #FFD352; }
+
+.aviso {
+  display: none;
+  margin: 5px;
+  padding: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px 100px / 120px;
+  text-align: center;
+  font-family: "Resina-Light";
+  font-size: 18px;
+  color: #fadc80;
+  background-color: #6B384C; }
+
+.navBotones {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  font-size: 23px; }
+
+.contenido {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  background-color: #44202d; }
+  .contenido .home__slides #mobile {
+    display: block;
+    height: auto; }
+  .contenido .home__slides #desktop {
+    display: none;
+    height: auto; }
+  .contenido .home__nuestrasPL {
+    height: auto;
+    padding: 0px;
+    background-image: url("../Multimedia/nuestrasPL/fondoNuestrasPL.jpg"); }
+    .contenido .home__nuestrasPL .listasNPL .data__nombre {
+      font-size: 25px;
+      font-family: "Resina-Regular"; }
+    .contenido .home__nuestrasPL .listasNPL .data__formato {
+      font-size: 20px;
+      font-family: "scp-medium"; }
+    .contenido .home__nuestrasPL .listasNPL .data__duracion {
+      font-size: 15px;
+      font-family: "scp-medium"; }
+    .contenido .home__nuestrasPL .listasNPL .precio {
+      text-align: end;
+      font-size: 30px;
+      font-family: "scp-medium"; }
+    .contenido .home__nuestrasPL .listasNPL .verMas {
+      width: 120px;
+      text-align: start;
+      font-size: 15px;
+      font-family: "scp-medium";
+      color: #FFD352;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .8s; }
+    .contenido .home__nuestrasPL .listasNPL .verMas:hover, .contenido .home__nuestrasPL .listasNPL .verMas:focus {
+      background-size: 100% 2px; }
+    .contenido .home__nuestrasPL .listasNPL #dark {
+      color: #5a2b3c; }
+    .contenido .home__nuestrasPL .listasNPL .lista__titulo {
+      font-size: 14px;
+      font-family: "scp-medium"; }
+    .contenido .home__nuestrasPL .listasNPL .lista__info {
+      font-size: 12px;
+      font-family: "scp-light"; }
+    .contenido .home__nuestrasPL .listasNPL__dale {
+      background-color: #854e66;
+      color: #FFD352; }
+    .contenido .home__nuestrasPL .listasNPL__itsBB {
+      background-color: #FFD352;
+      color: #5a2b3c; }
+    .contenido .home__nuestrasPL .listasNPL__togas {
+      background-color: #854e66;
+      color: #FFD352; }
+  .contenido .playlists {
+    width: 100%;
+    height: auto;
+    --bs-gutter-x: 0px;
+    background-image: url("../Multimedia/playlists/bckgrd.jpg");
+    background-repeat: repeat; }
+    .contenido .playlists .buscador #busqueda {
+      width: 60%;
+      height: 40px;
+      padding-left: 15px;
+      border: 1px solid #FFD352;
+      background-color: #44202d;
+      font-family: "Resina-Light";
+      font-size: 20px;
+      color: #FFD352; }
+    .contenido .playlists .buscador .btnBuscar {
+      font-size: 130%;
+      color: #FFD352; }
+      .contenido .playlists .buscador .btnBuscar a {
+        text-decoration: none;
+        color: #FFD352; }
+    .contenido .playlists #fxD {
+      height: 40px;
+      border: 1px solid #FFD352;
+      background-color: #44202d;
+      font-family: "Resina-Light";
+      font-size: 15px;
+      color: #FFD352; }
+      .contenido .playlists #fxD option {
+        font-family: monospace; }
+    .contenido .playlists #ordenar {
+      height: 40px;
+      border: 1px solid #FFD352;
+      background-color: #44202d;
+      font-family: "Resina-Light";
+      font-size: 15px;
+      color: #FFD352; }
+      .contenido .playlists #ordenar option {
+        font-family: monospace; }
+    .contenido .playlists .articulos {
+      height: auto;
+      min-height: 900px; }
+      .contenido .playlists .articulos #daleItem {
+        background-color: #854e66;
+        color: #FFD352; }
+        .contenido .playlists .articulos #daleItem .sumarCarrito {
+          background-color: #FFD352;
+          color: #854e66; }
+        .contenido .playlists .articulos #daleItem .sumarCarrito:hover {
+          background-color: #854e66;
+          color: #FFD352; }
+      .contenido .playlists .articulos #itsBBItem {
+        background-color: #FFD352;
+        color: #5a2b3c; }
+      .contenido .playlists .articulos #togasItem {
+        background-color: #854e66;
+        color: #FFD352; }
+        .contenido .playlists .articulos #togasItem .sumarCarrito {
+          background-color: #FFD352;
+          color: #854e66; }
+        .contenido .playlists .articulos #togasItem .sumarCarrito:hover {
+          background-color: #854e66;
+          color: #FFD352; }
+      .contenido .playlists .articulos .item {
+        border-radius: 10px;
+        background-color: #FFD352;
+        color: #6B384C; }
+        .contenido .playlists .articulos .item .pic {
+          padding: 10px;
+          border-radius: 50%; }
+        .contenido .playlists .articulos .item #dalePic {
+          border-radius: 0%; }
+        .contenido .playlists .articulos .item #itsBBPic {
+          border-radius: 0%; }
+        .contenido .playlists .articulos .item #togasPic {
+          border-radius: 0%; }
+        .contenido .playlists .articulos .item .data__nombre {
+          text-align: start;
+          font-size: 23px;
+          font-family: "Resina-Regular"; }
+        .contenido .playlists .articulos .item .data__formato {
+          font-size: 18px;
+          font-family: "scp-medium"; }
+        .contenido .playlists .articulos .item .data__formatoSelect {
+          background-color: #FFD352;
+          border: 2px solid #6B384C;
+          color: #6B384C;
+          font-family: "scp-medium",monospace;
+          font-size: 18px; }
+          .contenido .playlists .articulos .item .data__formatoSelect option {
+            text-align: center;
+            font-family: monospace; }
+        .contenido .playlists .articulos .item .data__duracion {
+          font-size: 15px;
+          font-family: "scp-medium"; }
+        .contenido .playlists .articulos .item .data .precio {
+          text-align: end;
+          font-size: 28px;
+          font-family: "scp-medium"; }
+        .contenido .playlists .articulos .item .data .sumarCarrito {
+          width: 75px;
+          height: 75px;
+          background-color: #6B384C;
+          color: #FFD352;
+          font-size: 40px; }
+        .contenido .playlists .articulos .item .data .sumarCarrito:hover {
+          background-color: #FFD352;
+          color: #6B384C; }
+  .contenido .carrito {
+    background-image: url("../Multimedia/fondoCarrito.jpg");
+    background-repeat: repeat; }
+    .contenido .carrito .carrito__cierre .tuCompra {
+      font-family: "Resina-Regular";
+      font-size: 25px;
+      color: #fadc80; }
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
+      height: auto;
+      background-color: #44202d;
+      border: 1px solid #fadc80;
+      border-radius: 5px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPortada {
+        border-radius: 30%; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
+        height: auto;
+        width: auto;
+        margin-bottom: 10px;
+        font-family: "Resina-Regular";
+        font-size: 17px;
+        color: #fadc80;
+        text-align: center; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
+        height: auto;
+        width: auto;
+        margin-bottom: 10px;
+        font-family: "Resina-Light";
+        font-size: 12px;
+        color: #fadc80; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
+        height: auto;
+        width: auto;
+        font-family: "scp-medium";
+        font-size: 12px;
+        color: #fadc80; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
+        height: 30px;
+        width: 45px;
+        padding: 5px 7px;
+        background-color: #44202d;
+        font-family: "scp-medium";
+        font-size: 13px;
+        color: #fadc80;
+        border: 1px solid #fadc80; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito .botonBorrar {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        color: #fadc80;
+        text-align: center; }
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
+      height: 350px;
+      font-family: "Resina-Light";
+      font-size: 25px;
+      color: #fadc80; }
+    .contenido .carrito .carrito__cierre .cierre {
+      border-top: 1px solid #fadc80;
+      height: 60px;
+      background-color: #44202d; }
+      .contenido .carrito .carrito__cierre .cierre .totalTxt {
+        font-family: "scp-bold";
+        font-size: 11px;
+        color: #fadc80; }
+      .contenido .carrito .carrito__cierre .cierre .totalCarrito {
+        font-family: "scp-bold";
+        font-size: 12px;
+        color: #fadc80; }
+      .contenido .carrito .carrito__cierre .cierre .botonFinalizarCompra {
+        width: 100px;
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #6B384C;
+        font-family: "scp-bold";
+        font-size: 13px;
+        color: #FFD352;
+        border: 1px solid #FFD352;
+        border-radius: 10px; }
+  .contenido .ayuda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenido .ayuda .bannerFAQ {
+      width: 100%; }
+    .contenido .ayuda .infoFAQ {
+      width: 100%; }
+      .contenido .ayuda .infoFAQ .accordion {
+        width: 100%; }
+        .contenido .ayuda .infoFAQ .accordion .accordion-item {
+          border: none; }
+          .contenido .ayuda .infoFAQ .accordion .accordion-item .accordion-header .accordion-button {
+            background-color: #521b2f;
+            font-family: "Resina-Regular";
+            font-size: 20px;
+            color: #FFD352; }
+          .contenido .ayuda .infoFAQ .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+            background-image: url("../Multimedia/Ayuda/masDark.png"); }
+          .contenido .ayuda .infoFAQ .accordion .accordion-item .accordion-header .accordion-button::after {
+            width: 2rem;
+            height: 2rem;
+            background-size: 2rem;
+            background-image: url("../Multimedia/Ayuda/masLight.png"); }
+          .contenido .ayuda .infoFAQ .accordion .accordion-item .accordion-body {
+            background-color: #44202D;
+            font-family: "scp-medium";
+            font-size: 13px;
+            color: #FFD352; }
+            .contenido .ayuda .infoFAQ .accordion .accordion-item .accordion-body .mapa {
+              width: 100%;
+              height: auto; }
+          .contenido .ayuda .infoFAQ .accordion .accordion-item .consultas {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around; }
+            .contenido .ayuda .infoFAQ .accordion .accordion-item .consultas .btn {
+              width: 45px;
+              height: 45px;
+              border: 1.5px solid #FFD352;
+              background-color: #44202D;
+              text-align: center; }
+              .contenido .ayuda .infoFAQ .accordion .accordion-item .consultas .btn .icon {
+                text-decoration: none;
+                color: #FFD352; }
+            .contenido .ayuda .infoFAQ .accordion .accordion-item .consultas .btn:hover {
+              border-color: #ffe597; }
+              .contenido .ayuda .infoFAQ .accordion .accordion-item .consultas .btn:hover .icon {
+                color: #ffe597; }
+
+.pie {
+  background-color: #6B384D; }
+  .pie__datos {
+    height: auto;
+    font-family: "scp-medium";
+    font-size: 85%;
+    color: #FFD352;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pie__datos p {
+      margin: 5px 0px 5px 0px; }
+    .pie__datos .dat {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center; }
+  .pie__suscribir {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    .pie__suscribir--title {
+      font-family: "scp-bold";
+      font-size: 100%;
+      color: #FFD352;
+      text-align: center; }
+    .pie__suscribir--email {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .pie__suscribir--email input {
+        width: 190px;
+        height: 35px;
+        border: 1px solid #FFD352;
+        background-color: #6B384D;
+        padding-left: 15px;
+        font-family: "scp-medium";
+        font-size: 90%;
+        color: #E2AE28; }
+      .pie__suscribir--email .btn {
+        width: 35px;
+        height: 35px;
+        background-color: #FFD352;
+        margin-left: 10px;
+        line-height: 0;
+        padding: 5px 8px; }
+        .pie__suscribir--email .btn #suscribe {
+          color: #6B384D;
+          font-size: 90%;
+          margin: 0px;
+          padding: 0px; }
+      .pie__suscribir--email .btn:hover {
+        background-color: #6B384D;
+        border: 1px solid #FFD352; }
+        .pie__suscribir--email .btn:hover #suscribe {
+          color: #fadc80; }
+  .pie__logo {
+    width: 183px;
+    height: 101px;
+    margin: 30px 50px 20px 50px; }
+  .pie__redes {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 150%; }
+    .pie__redes .btn {
+      width: 53px;
+      height: 53px;
+      border: 2px solid #FFD352;
+      background-color: #FFD352;
+      text-align: center; }
+      .pie__redes .btn .icon {
+        text-decoration: none;
+        color: #6B384D; }
+    .pie__redes .btn:hover {
+      background-color: #6B384D; }
+      .pie__redes .btn:hover .icon {
+        color: #FFD352; }
+  .pie__derechos {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "scp-medium";
+    font-size: 60%;
+    color: #e2bc48; }
+    .pie__derechos i {
+      font-size: 80%;
+      margin-right: 4px; }
+
+@media only screen and (min-width: 992px) {
+  .lgctrl {
+    width: 82%; }
+  .logo {
+    width: 100px;
+    margin: 0px 5px 0px 15px; }
+  .navbar {
+    display: flex;
+    justify-content: space-between; }
+  .navbar-collapse {
+    width: 600px;
+    flex-grow: 0; }
+  .navbar-nav {
+    padding-top: 0px; }
+  .nav-item {
+    width: auto; }
+    .nav-item .nav-link {
+      font-size: 20px; }
+  .navBotones {
+    margin: 8px; }
+    .navBotones #menu {
+      display: none; }
+  .contenido {
+    margin-top: 71px; }
+    .contenido .home__slides #mobile {
+      display: none; }
+    .contenido .home__slides #desktop {
+      display: block; }
+    .contenido .home__nuestrasPL .listasNPL .data__nombre {
+      font-size: 35px; }
+    .contenido .home__nuestrasPL .listasNPL .data__formato {
+      font-size: 30px; }
+    .contenido .home__nuestrasPL .listasNPL .data__duracion {
+      font-size: 25px; }
+    .contenido .home__nuestrasPL .listasNPL .precio {
+      font-size: 45px; }
+    .contenido .home__nuestrasPL .listasNPL .verMas {
+      display: none; }
+    .contenido .home__nuestrasPL .listasNPL .collapse {
+      display: flex;
+      align-items: center; }
+    .contenido .home__nuestrasPL .listasNPL .lista {
+      text-align: start; }
+      .contenido .home__nuestrasPL .listasNPL .lista p {
+        margin-bottom: 4px; }
+      .contenido .home__nuestrasPL .listasNPL .lista__titulo {
+        font-size: 17px; }
+      .contenido .home__nuestrasPL .listasNPL .lista__info {
+        font-size: 15px; }
+    .contenido .playlists .buscador #busqueda {
+      width: 35%; }
+    .contenido .playlists .buscador .btnBuscar {
+      font-size: 150%; }
+    .contenido .carrito .carrito__cierre .tuCompra {
+      font-family: "Resina-Regular";
+      font-size: 60px;
+      color: #fadc80; }
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
+      border-width: 2px;
+      border-radius: 7px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
+        margin-bottom: 15px;
+        font-size: 20px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
+        margin-bottom: 15px;
+        font-size: 17px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
+        font-size: 17px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
+        height: 27px;
+        width: 55px;
+        font-size: 17px; }
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
+      height: 500px;
+      font-size: 30px; }
+    .contenido .carrito .carrito__cierre .cierre {
+      border-width: 2px;
+      height: 150px; }
+      .contenido .carrito .carrito__cierre .cierre .totalTxt {
+        font-size: 20px; }
+      .contenido .carrito .carrito__cierre .cierre .totalCarrito {
+        font-size: 20px; }
+      .contenido .carrito .carrito__cierre .cierre .botonFinalizarCompra {
+        width: 145px;
+        height: 45px;
+        font-size: 20px; }
+    .contenido .ayuda .bannerFAQ {
+      width: 75%; }
+    .contenido .ayuda .infoFAQ {
+      width: 75%; }
+  .pie__datos .cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
