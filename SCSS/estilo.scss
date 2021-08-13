@@ -91,8 +91,6 @@ img{
 }
 
 .contenido{
-    width: 100%;
-    height: auto;
     margin-top: 60px;
     background-color: #44202d;
 
@@ -110,7 +108,6 @@ img{
 
         &__nuestrasPL{
             height: auto;
-            padding: 0px;
             background-image: url("../Multimedia/nuestrasPL/fondoNuestrasPL.jpg");
 
             .listasNPL{
@@ -138,7 +135,8 @@ img{
                 }
                 
                 .verMas{
-                    width: 120px;
+                    width: auto;
+                    height: auto;
                     text-align: start;
                     font-size: 15px;
                     font-family: "scp-medium";
@@ -159,6 +157,10 @@ img{
                     color: #5a2b3c;
                 }
 
+                .sumarCarrito i{
+                    font-size: 20px;
+                }
+
                 .lista{
                     &__titulo{
                         font-size: 14px;
@@ -166,22 +168,22 @@ img{
                     }
 
                     &__info{
-                        font-size: 12px;
+                        font-size: 14px;
                         font-family: "scp-light";
                     }
                 }
 
-                &__dale{
+                #daleItemH{
                     background-color: #854e66;
                     color: #FFD352;
                 }
 
-                &__itsBB{
+                #itsBBItemH{
                     background-color: #FFD352;
                     color: #5a2b3c;
                 }
 
-                &__togas{
+                #togasItemH{
                     background-color: #854e66;
                     color: #FFD352;
                 }
@@ -760,6 +762,10 @@ img{
 
                     .verMas{
                         display: none;
+                    }
+
+                    .sumarCarrito i{
+                        font-size: 35px;
                     }
 
                     .collapse{

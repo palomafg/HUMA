@@ -137,8 +137,6 @@ img {
   font-size: 23px; }
 
 .contenido {
-  width: 100%;
-  height: auto;
   margin-top: 60px;
   background-color: #44202d; }
   .contenido .home__slides #mobile {
@@ -149,7 +147,6 @@ img {
     height: auto; }
   .contenido .home__nuestrasPL {
     height: auto;
-    padding: 0px;
     background-image: url("../Multimedia/nuestrasPL/fondoNuestrasPL.jpg"); }
     .contenido .home__nuestrasPL .listasNPL .data__nombre {
       font-size: 25px;
@@ -165,7 +162,8 @@ img {
       font-size: 30px;
       font-family: "scp-medium"; }
     .contenido .home__nuestrasPL .listasNPL .verMas {
-      width: 120px;
+      width: auto;
+      height: auto;
       text-align: start;
       font-size: 15px;
       font-family: "scp-medium";
@@ -179,19 +177,21 @@ img {
       background-size: 100% 2px; }
     .contenido .home__nuestrasPL .listasNPL #dark {
       color: #5a2b3c; }
+    .contenido .home__nuestrasPL .listasNPL .sumarCarrito i {
+      font-size: 20px; }
     .contenido .home__nuestrasPL .listasNPL .lista__titulo {
       font-size: 14px;
       font-family: "scp-medium"; }
     .contenido .home__nuestrasPL .listasNPL .lista__info {
-      font-size: 12px;
+      font-size: 14px;
       font-family: "scp-light"; }
-    .contenido .home__nuestrasPL .listasNPL__dale {
+    .contenido .home__nuestrasPL .listasNPL #daleItemH {
       background-color: #854e66;
       color: #FFD352; }
-    .contenido .home__nuestrasPL .listasNPL__itsBB {
+    .contenido .home__nuestrasPL .listasNPL #itsBBItemH {
       background-color: #FFD352;
       color: #5a2b3c; }
-    .contenido .home__nuestrasPL .listasNPL__togas {
+    .contenido .home__nuestrasPL .listasNPL #togasItemH {
       background-color: #854e66;
       color: #FFD352; }
   .contenido .playlists {
@@ -563,6 +563,8 @@ img {
       font-size: 45px; }
     .contenido .home__nuestrasPL .listasNPL .verMas {
       display: none; }
+    .contenido .home__nuestrasPL .listasNPL .sumarCarrito i {
+      font-size: 35px; }
     .contenido .home__nuestrasPL .listasNPL .collapse {
       display: flex;
       align-items: center; }

@@ -64,6 +64,12 @@
                 </div>
             </div>
             <!--Fin Menú(Hamburguesa) + Buscador + Carrito-->
+
+            <!--Aviso de añadido al carrito-->
+            <div class="aviso position-absolute top-100 end-0">
+                <span>Añadido!</span>
+            </div>
+            <!--Fin Aviso de añadido al carrito-->
             
         </nav>
         <!--Fin Navegador-->
@@ -100,172 +106,14 @@
             </div>
 
             <div class="home__nuestrasPL container-fluid">
-                <div class="bannerNPL">
-                    <img class="img-fluid" src="./Multimedia/nuestrasPL/bannerNuestrasPL.jpg" alt="Nuestras Playlists">
-                </div>
+                
+                <img class="bannerNPL img-fluid" src="./Multimedia/nuestrasPL/bannerNuestrasPL.jpg" alt="Nuestras Playlists">
 
-                <div class="listasNPL row justify-content-center">
+                <div id="npl" class="listasNPL row justify-content-center">
 
-                    <div class="listasNPL__dale my-0 my-md-4 col-12 col-md-10 row">
-                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
-                            <h4 class="data__nombre">DALE</h4>
-                            <h5 class="data__formato">CASSETTE</h5>
-                            <h6 class="data__duracion">48min</h6>
-                        </div>
-
-                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$1720</h4>
-                      
-                        <div class="mb-3 mb-md-4 ms-4 ms-md-5 col-12 col-md-10">
-                            <button class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                                <span>+ VER MÁS</span>
-                            </button>
-                        </div>
-
-                        <div class="collapse container-fluid px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample1">
-                            <div class="lista">
-                                <p class="lista__titulo">Go</p>
-                                <p class="lista__info">The Chemical Brothers / 4:21</p>
-    
-                                <p class="lista__titulo">Under the influence</p>
-                                <p class="lista__info">The Chemical Brothers / 4:16</p>
-    
-                                <p class="lista__titulo">Extreme Ways</p>
-                                <p class="lista__info">Moby / 3:57</p>
-    
-                                <p class="lista__titulo">Born Splippy</p>
-                                <p class="lista__info">Underwold / 7:36</p>
-    
-                                <p class="lista__titulo">Is it always binary</p>
-                                <p class="lista__info">Soulwax / 3:29</p>
-    
-                                <p class="lista__titulo">I see you baby</p>
-                                <p class="lista__info">Groove Armada, Gramma Funk / 4:04</p>
-    
-                                <p class="lista__titulo">Made in China</p>
-                                <p class="lista__info">Higher Brothers, DJ Snake / 2:51</p>
-    
-                                <p class="lista__titulo">You came to party</p>
-                                <p class="lista__info">Meter Mobb, Too $hort / 3:46</p>
-    
-                                <p class="lista__titulo">Cop Drama</p>
-                                <p class="lista__info">Clearside / 2:51</p>
-    
-                                <p class="lista__titulo">BANDZ</p>
-                                <p class="lista__info">BIG MAKK / 3:44</p>
-    
-                                <p class="lista__titulo">Quema</p>
-                                <p class="lista__info">Sotomayor / 3:26</p>
-    
-                                <p class="lista__titulo">We Don't Wanna Dance</p>
-                                <p class="lista__info">Jane. / 3:30</p>
-                            </div>
-                        </div>
-
-                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
-                            <img class="img-fluid" src="./Multimedia/nuestrasPL/dale.png" alt="Cassette de Dale">
-                        </div>
-                    </div>
-
-                    <div class="listasNPL__itsBB my-0 my-md-4 col-12 col-md-10 row">
-                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
-                            <h4 class="data__nombre">IT'S BRAINY, BITCH</h4>
-                            <h5 class="data__formato">CD</h5>
-                            <h6 class="data__duracion">38min</h6>
-                        </div>
-
-                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$1200</h4>
-                        
-                        <div class="mb-3 mb-md-4 mx-4 mx-md-5 col-12 col-md-10">
-                            <button id="dark" class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                <span>+ VER MÁS</span>
-                            </button>
-                        </div>
-                        
-                        <div class="collapse container-fluid px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample2">
-                            <div class="lista">
-                                <p class="lista__titulo">A Brain in a Bottle</p>
-                                <p class="lista__info">Thom Yorke / 4:40</p>
-    
-                                <p class="lista__titulo">Insane in the Brain</p>
-                                <p class="lista__info">Black Sunday / 3:28</p>
-    
-                                <p class="lista__titulo">Brain Damage</p>
-                                <p class="lista__info">Pink Floyd / 3:46</p>
-    
-                                <p class="lista__titulo">Banana Brain</p>
-                                <p class="lista__info">Die Antwoord / 4:48</p>
-    
-                                <p class="lista__titulo">Porcelain</p>
-                                <p class="lista__info">Moby / 3:58</p>
-    
-                                <p class="lista__titulo">Teardrop</p>
-                                <p class="lista__info">Massive Attack / 5:30</p>
-    
-                                <p class="lista__titulo">Brian Cycles</p>
-                                <p class="lista__info">Radio Moscow / 3:23</p>
-    
-                                <p class="lista__titulo">Default</p>
-                                <p class="lista__info">Atom For Peace / 5:15</p>
-    
-                                <p class="lista__titulo">Brain Washing</p>
-                                <p class="lista__info">Mike Maldonado / 2:37</p>
-    
-                                <p class="lista__titulo">Fugu Kiss</p>
-                                <p class="lista__info">Rone / 4:46</p>
-                            </div>
-                        </div>
-
-                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
-                            <img class="img-fluid" src="./Multimedia/nuestrasPL/itsBB.png" alt="CD de It's Brainy Bitch">
-                        </div>
-                    </div>
-
-                    <div class="listasNPL__togas my-0 my-md-4 col-12 col-md-10 row">
-                        <div class="data my-4 my-md-5 px-4 px-md-5 col-6">
-                            <h4 class="data__nombre">TOGAS</h4>
-                            <h5 class="data__formato">VINILO</h5>
-                            <h6 class="data__duracion">13min</h6>
-                        </div>
-
-                        <h4 class="precio my-4 my-md-5 px-4 px-md-5 col-6">$4200</h4>
-
-                        <div class="mb-3 mb-md-4 ms-4 ms-md-5 col-12 col-md-10">
-                            <button class="btn verMas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                                <span>+ VER MÁS</span>
-                            </button>
-                        </div>
-
-                        <div class="collapse px-4 px-md-5 my-md-4 col-12 col-lg-6" id="collapseExample3">
-                            <div class="lista">
-                                <p class="lista__titulo">Smelly Cat</p>
-                                <p class="lista__info">Friends / 1:03</p>
-    
-                                <p class="lista__titulo">Hey gata fina</p>
-                                <p class="lista__info">Srita Bimbo / 2:13</p>
-    
-                                <p class="lista__titulo">Rock del gato</p>
-                                <p class="lista__info">Ratones Paranoicos / 3:01</p>
-    
-                                <p class="lista__titulo">Born Splippy</p>
-                                <p class="lista__info">Underwold / 7:36</p>
-    
-                                <p class="lista__titulo">Gatos los tres</p>
-                                <p class="lista__info">Miau Trío, Irribaren / 2:32</p>
-    
-                                <p class="lista__titulo">Cool Cat</p>
-                                <p class="lista__info">Queen / 3:28</p>
-                            </div>
-                        </div>
-                        
-                        <div class="foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6">
-                            <img class="img-fluid" src="./Multimedia/nuestrasPL/togas.png" alt="Vinilo de Togas">
-                        </div>
-
-                    </div>
-                </div>
+                 </div>
                 
             </div>
-
 
         </div>
     </section>

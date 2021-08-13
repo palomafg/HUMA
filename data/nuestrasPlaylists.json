@@ -2,21 +2,21 @@
     "nombre": "DALE",
     "formato": "CASSETTE",
     "duracion": "48",
-    "lista": "Go, The Chemical Brothers / 4:21 | Under the influence, The Chemical Brothers / 4:16 | Extreme Ways, Moby / 3:57 | Born Splippy, Underwold / 7:36 | Is it always binary, Soulwax / 3:29 | I see you baby, Groove Armada, Gramma Funk / 4:04 | Made in China, Higher Brothers, DJ Snake / 2:51 | You came to party, Meter Mobb, Too $hort / 3:46 | Cop Drama, Clearside / 2:51 | BANDZ, BIG MAKK / 3:44 | Quema, Sotomayor / 3:26 | We Don't Wanna Dance, Jane. / 3:30",
+    "lista": ["Go / The Chemical Brothers / 4:21", "Under the influence / The Chemical Brothers / 4:16", "Extreme Ways / Moby / 3:57", "Born Splippy / Underwold / 7:36", "Is it always binary / Soulwax / 3:29", "I see you baby / Groove Armada, Gramma Funk / 4:04", "Made in China / Higher Brothers, DJ Snake / 2:51", "You came to party / Meter Mobb, Too $hort / 3:46", "Cop Drama / Clearside / 2:51", "BANDZ / BIG MAKK / 3:44", "Quema / Sotomayor / 3:26", "We Don't Wanna Dance / Jane. / 3:30"],
     "portada": "https://res.cloudinary.com/dd2nenune/image/upload/v1626027915/Portadas/dale_qbhopk.png",
     "precio": "2540"
 },  {
     "nombre": "IT'S BRAINY, BITCH",
     "formato": "CD",
     "duracion": "38",
-    "lista": "A Brain in a Bottle, Thom Yorke / 4:40 | Insane in the Brain, Black Sunday / 3:28 | Brain Damage, Pink Floyd / 3:46 | Banana Brain, Die Antwoord / 4:48 | Porcelain, Moby / 3:58 | Teardrop, Massive Attack / 5:30 | Brian Cycles, Radio Moscow / 3:23 | Default, Atom For Peace / 5:15 | Brain Washing, Mike Maldonado / 2:37 | Fugu Kiss, Rone / 4:46",
+    "lista": ["A Brain in a Bottle / Thom Yorke / 4:40", "Insane in the Brain / Black Sunday / 3:28", "Brain Damage / Pink Floyd / 3:46", "Banana Brain / Die Antwoord / 4:48", "Porcelain / Moby / 3:58", "Teardrop / Massive Attack / 5:30", "Brian Cycles / Radio Moscow / 3:23", "Default / Atom For Peace / 5:15", "Brain Washing / Mike Maldonado / 2:37", "Fugu Kiss / Rone / 4:46"],
     "portada": "https://res.cloudinary.com/dd2nenune/image/upload/v1626027915/Portadas/itsBB_v8jcd8.png",
     "precio": "1190"
 },  {
     "nombre": "TOGAS",
     "formato": "VINILO",
     "duracion": "13",
-    "lista": "Smelly Cat, Friends / 1:03 | Hey gata fina, Srita Bimbo / 2:13 | Rock del gato, Ratones Paranoicos / 3:01 | Born Splippy, Underwold / 7:36 | Gatos los tres, Miau Trío, Irribaren / 2:32 | Cool Cat, Queen / 3:28",
+    "lista": ["Smelly Cat / Friends / 1:03", "Hey gata fina / Srita Bimbo / 2:13", "Rock del gato / Ratones Paranoicos / 3:01", "Born Splippy / Underwold / 7:36", "Gatos los tres / Miau Trío, Irribaren / 2:32", "Cool Cat / Queen / 3:28"],
     "portada": "https://res.cloudinary.com/dd2nenune/image/upload/v1626027914/Portadas/togas_q1wmjw.png",
     "precio": "3765"
 }]
