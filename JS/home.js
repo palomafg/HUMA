@@ -9,6 +9,8 @@ $.getJSON(URLJSON, function (respuesta, estado) {
             
             mostrarProductos(nuestrasPlaylists);
 
+        } else{
+            mostrarProductos(null);
         }
 });
 
