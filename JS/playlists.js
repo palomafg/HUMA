@@ -19,7 +19,7 @@ class Playlist{
         this.lista = lista;
         this.portada = portada;
 
-        // Calculo precio
+        // Calculo precio en base al formato
         let cxd = duracion * costoXmin;
         let precio = cxd;
         switch (formato.toUpperCase()) {
