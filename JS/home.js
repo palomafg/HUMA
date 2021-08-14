@@ -2,7 +2,7 @@
 const npl = document.getElementById("npl");
 
 // Array con nuestras playlists desde un JSON
-const URLJSON = "../data/nuestrasPlaylists.json";
+const URLJSON = "https://palomafg.github.io/HUMA/data/nuestrasPlaylists.json";
 $.getJSON(URLJSON, function (respuesta, estado) {
         if(estado === "success"){
             let nuestrasPlaylists = respuesta;
