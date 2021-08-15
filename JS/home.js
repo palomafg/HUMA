@@ -22,7 +22,7 @@ const carrito = [];
 // Mostrar productos
 function mostrarProductos(prod){
     let productosMostrar = prod;
-    console.log(productosMostrar);
+
     if(productosMostrar != null){
         productosMostrar.forEach(element => {
 

@@ -338,7 +338,7 @@
 
             if(nombre.toUpperCase().indexOf(busqueda) > -1){
                 let itemM = nombresProd[i].closest('.item');
-                itemM.setAttribute("class","item col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
+                itemM.setAttribute("class","item position-relative col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
 
             } else{
                 let itemO = nombresProd[i].closest('.item');
@@ -369,7 +369,6 @@
         // Opcion seleccionada
         let activo = document.getElementById("fxD").value;
 
-        let itemsTodos = document.getElementsByClassName("item");
         let duracionProd = document.getElementsByClassName("time");
 
         switch (activo) {
@@ -382,7 +381,7 @@
 
                     if(duracion < 25){
                         let itemM = duracionProd[i].closest('.item');
-                        itemM.setAttribute("class","item col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
+                        itemM.setAttribute("class","item position-relative col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
 
                     } else{
                         let itemO = duracionProd[i].closest('.item');
@@ -400,7 +399,7 @@
 
                     if(duracion > 25 && duracion < 50){
                         let itemM = duracionProd[i].closest('.item');
-                        itemM.setAttribute("class","item col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
+                        itemM.setAttribute("class","item position-relative col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
 
                     } else{
                         let itemO = duracionProd[i].closest('.item');
@@ -418,7 +417,7 @@
 
                     if(duracion > 50){
                         let itemM = duracionProd[i].closest('.item');
-                        itemM.setAttribute("class","item col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
+                        itemM.setAttribute("class","item position-relative col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
 
                     } else{
                         let itemO = duracionProd[i].closest('.item');
