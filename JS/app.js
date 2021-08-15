@@ -55,7 +55,7 @@
 
                 // Item
                 let item = document.createElement("div");
-                item.setAttribute("class","item col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
+                item.setAttribute("class","item position-relative col-11 col-md-5 col-lg-3 mx-3 my-4 p-2 row justify-content-center align-items-center");
                 // Setear id para los productos especiales
                 if(element.nombre === "DALE"){
                     item.setAttribute("id","daleItem");
@@ -91,7 +91,7 @@
 
                     // Datos
                     let datos = document.createElement("div");
-                    datos.setAttribute("class","data p-3 col-12 row justify-content-end");
+                    datos.setAttribute("class","data p-3 col-12 align-self-end row justify-content-end");
 
                         // Precio
                         let precio = document.createElement("h4");
@@ -149,12 +149,6 @@
                         duracion.setAttribute("class","data__duracion time col-12 my-2 p-0 ps-2");
                         duracion.textContent = `${element.duracion}min`;
                         datos.appendChild(duracion);
-
-                        // // Lista
-                        // let lista = document.createElement("div");
-                        // lista.setAttribute("class","list collapse container-fluid col-12");
-                        // ${element.lista}
-                        // datos.appendChild(lista);
                         
                         // Añadir al carrito
                         let sumarCarrito = document.createElement("button");
@@ -162,7 +156,46 @@
                         sumarCarrito.innerHTML = '<i class="fas fa-cart-plus"></i>';
                         datos.appendChild(sumarCarrito);
 
+                        // Ver lista BOTON
+                        let verMas = document.createElement("div");
+                        verMas.setAttribute("class","col-12 m-2 p-0 d-flex justify-content-center");
+
+                            let btnMas = document.createElement("button");
+                            btnMas.setAttribute("class","btn verMas p-2");
+                            btnMas.setAttribute("type","button");
+                            btnMas.setAttribute("data-bs-toggle","collapse");
+                            btnMas.setAttribute("data-bs-target",`#collapse${element.id}`);
+                            btnMas.setAttribute("aria-expanded","false");
+                            btnMas.setAttribute("aria-controls",`collapse${element.id}`);
+                            
+                                let verLista = document.createElement("span");
+                                verLista.textContent = `+ VER LISTA`;
+                                btnMas.appendChild(verLista);
+                            
+                            verMas.appendChild(btnMas);
+
+                        datos.appendChild(verMas);
+
                     item.appendChild(datos);
+
+                    // Lista
+                    let colapsa = document.createElement("div");
+                    colapsa.setAttribute("class","collapse container-fluid colapsaLista position-absolute bottom-0 start-0 col-12 p-3");
+                    colapsa.setAttribute("id",`collapse${element.id}`);
+
+                        let lista = document.createElement("div");
+                        lista.setAttribute("class","lista");
+
+                            for(i=0; i < element.lista.length; i++){
+                                let tema = document.createElement("p");
+                                tema.setAttribute("class","lista__info text-center");
+                                tema.textContent = `${element.lista[i]}`;
+                                lista.appendChild(tema);
+                            }
+
+                        colapsa.appendChild(lista);
+
+                    item.appendChild(colapsa);
 
                 tienda.appendChild(item);
             });
@@ -180,6 +213,14 @@
             formatoSelect.forEach((elegirFormato) => {
                 elegirFormato.addEventListener('change',actualizarPrecio);
             });
+            
+        } else{
+
+            tienda.innerHTML = `<div class="error d-flex flex-column justify-content-center align-items-center">
+                            <i class="m-5 fa-4x far fa-dizzy"></i>
+                            <h2 class="m-1">Ha ocurrido un error!</h2>
+                        </div>`;
+
         }
     }
     // Fin Mostrar productos

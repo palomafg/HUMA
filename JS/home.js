@@ -4,6 +4,7 @@ const npl = document.getElementById("npl");
 // Array con nuestras playlists desde un JSON
 const URLJSON = "https://palomafg.github.io/HUMA/data/nuestrasPlaylists.json";
 $.getJSON(URLJSON, function (respuesta, estado) {
+
         if(estado === "success"){
             let nuestrasPlaylists = respuesta;
             
@@ -21,7 +22,7 @@ const carrito = [];
 // Mostrar productos
 function mostrarProductos(prod){
     let productosMostrar = prod;
-
+    console.log(productosMostrar);
     if(productosMostrar != null){
         productosMostrar.forEach(element => {
 
@@ -149,131 +150,10 @@ function mostrarProductos(prod){
 
     } else {
 
-        // Esto es porque el servidor de GitHub no me lee el JSON
-        for(i = 0; i < 3; i++){
-
-            // Item
-            let itemH = document.createElement("div");
-            itemH.setAttribute("class","itemH my-0 my-md-4 col-12 col-md-10 row justify-content-around");
-            // Setear id para los productos especiales
-            if(productos[i].nombre === "DALE"){
-                itemH.setAttribute("id","daleItemH");
-            }
-            if(productos[i].nombre === "IT'S BRAINY, BITCH"){
-                itemH.setAttribute("id","itsBBItemH");
-            }
-            if(productos[i].nombre === "TOGAS"){
-                itemH.setAttribute("id","togasItemH");
-            }
-
-                // Datos
-                let data = document.createElement("div");
-                data.setAttribute("class","data my-4 my-md-5 px-4 px-md-5 col-6");
-
-                    // Nombre
-                    let nombre = document.createElement("h4");
-                    nombre.setAttribute("class","data__nombre name");
-                    nombre.textContent = `${productos[i].nombre}`;
-                    data.appendChild(nombre);
-
-                    // Formato
-                    let formato = document.createElement("h5");
-                    formato.setAttribute("class","data__formato format");
-                    formato.textContent = `${productos[i].formato}`;
-                    data.appendChild(formato);
-
-                    // Duracion
-                    let duracion = document.createElement("h6");
-                    duracion.setAttribute("class","data__duracion time");
-                    duracion.textContent = `${productos[i].duracion}min`;
-                    data.appendChild(duracion);
-                
-                itemH.appendChild(data);
-
-                // Precio
-                let precio = document.createElement("h4");
-                precio.setAttribute("class","precio my-4 my-md-5 px-4 px-md-5 col-6");
-                precio.textContent = `$${productos[i].precio}`;
-                itemH.appendChild(precio);
-
-                // Ver lista BOTON
-                let verMas = document.createElement("div");
-                verMas.setAttribute("class","col-6 col-sm-3 col-lg-7 m-2 p-2");
-
-                    let btnMas = document.createElement("button");
-                    btnMas.setAttribute("class","btn verMas p-2");
-                    btnMas.setAttribute("type","button");
-                    btnMas.setAttribute("data-bs-toggle","collapse");
-                    btnMas.setAttribute("data-bs-target",`#collapse${productos[i].nombre}`);
-                    btnMas.setAttribute("aria-expanded","false");
-                    btnMas.setAttribute("aria-controls",`collapse${productos[i].nombre}`);
-                    if(productos[i].nombre === "IT'S BRAINY, BITCH"){
-                        btnMas.setAttribute("id","dark");
-                        btnMas.setAttribute("data-bs-target",`#collapseItsBB`);
-                        btnMas.setAttribute("aria-controls",`collapseItsBB`);
-                    }
-                    
-                        let verLista = document.createElement("span");
-                        verLista.textContent = `+ VER LISTA`;
-                        btnMas.appendChild(verLista);
-                    
-                    verMas.appendChild(btnMas);
-
-                itemH.appendChild(verMas);
-
-                // Añadir al carrito BOTON
-                let sumarCarrito = document.createElement("button");
-                sumarCarrito.setAttribute("class","btn btnHN rounded-circle sumarCarrito col-3 col-sm-1 m-3 p-0 py-lg-4");
-                if(productos[i].nombre === "IT'S BRAINY, BITCH"){
-                    sumarCarrito.setAttribute("id","dark");
-                }
-                sumarCarrito.innerHTML = '<i class="fas fa-cart-plus"></i>';
-                itemH.appendChild(sumarCarrito);
-
-                // Lista
-                let colapsa = document.createElement("div");
-                colapsa.setAttribute("class","collapse container-fluid col-12 col-lg-6 p-4 d-lg-flex justify-content-lg-center");
-                colapsa.setAttribute("id",`collapse${productos[i].nombre}`);
-                if(productos[i].nombre === "IT'S BRAINY, BITCH"){
-                    colapsa.setAttribute("id",`collapseItsBB`);
-                }
-
-                    let lista = document.createElement("div");
-                    lista.setAttribute("class","lista");
-
-                        for(j=0; j < productos[i].lista.length; j++){
-                            let tema = document.createElement("p");
-                            tema.setAttribute("class","lista__info text-center");
-                            tema.textContent = `${productos[i].lista[j]}`;
-                            lista.appendChild(tema);
-                        }
-
-                    colapsa.appendChild(lista);
-
-                itemH.appendChild(colapsa);
-
-                // Portada
-                let portada = document.createElement("div");
-                portada.setAttribute("class","foto d-md-flex align-items-center px-2 px-md-4 my-3 col-12 col-lg-6");
-
-                    let foto = document.createElement("img");
-                    foto.setAttribute("src",`${productos[i].portada}`);
-                    foto.setAttribute("class","img-fluid pic");
-                    foto.setAttribute("alt",`Portada de ${productos[i].nombre}`);
-                    portada.appendChild(foto);
-
-                itemH.appendChild(portada);
-
-            npl.appendChild(itemH);
-        }
-
-        // Botones Sumar al carrito
-        const sumarCarritoBotones = document.querySelectorAll('.sumarCarrito');
-        // Sumar al carrito
-        sumarCarritoBotones.forEach((sumarCarritoBoton) => {
-            sumarCarritoBoton.addEventListener('click',sumarCarritoClicked);
-        });
-
+        npl.innerHTML = `<div class="error d-flex flex-column justify-content-center align-items-center">
+                            <i class="m-5 fa-4x far fa-dizzy"></i>
+                            <h2 class="m-1">Ha ocurrido un error!</h2>
+                        </div>`;
     }
 
 }

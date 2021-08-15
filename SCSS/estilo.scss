@@ -188,6 +188,13 @@ img{
                     color: #FFD352;
                 }
             }
+
+            .error{
+                width: 100%;
+                height: 500px;
+
+                @include resinaLight(30px,#FFD352);
+            }
         }
     }
 
@@ -208,6 +215,13 @@ img{
                 border: 1px solid #FFD352;
                 background-color: #44202d;
                 @include resinaLight(20px,#FFD352);
+            }
+            #busqueda::placeholder{
+                color: #FFD352;
+                opacity: 0.6;
+            }
+            #busqueda:focus{
+                border: 2px solid #ffe597;
             }
 
             .btnBuscar{
@@ -262,6 +276,14 @@ img{
                     background-color: #854e66;
                     color: #FFD352;
                 }
+
+                .verMas{
+                    color: #FFD352;
+                }
+                .colapsaLista{
+                    background-color: #854e66;
+                    border-color: #FFD352;
+                }
             }
             #itsBBItem{
                 background-color: #FFD352;
@@ -278,6 +300,14 @@ img{
                 .sumarCarrito:hover{
                     background-color: #854e66;
                     color: #FFD352;
+                }
+
+                .verMas{
+                    color: #FFD352;
+                }
+                .colapsaLista{
+                    background-color: #854e66;
+                    border-color: #FFD352;
                 }
             }
             // Estilo item individual
@@ -346,24 +376,58 @@ img{
                         background-color: #FFD352;
                         color: #6B384C;
                     }
+
+                    .verMas{
+                        width: auto;
+                        height: auto;
+                        text-align: center;
+                        @include scpMedium(15px,#5a2b3c);
+    
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: background-size .8s;
+                    }
+    
+                    .verMas:hover, .verMas:focus{
+                        background-size: 100% 2px;
+                    }
+
                 }
 
-                // .lista{
-                //     &__titulo{
-                //         font-size: 14px;
-                //         font-family: "scp-medium";
-                //     }
+                .colapsaLista{
+                    margin-bottom: 80px;
+                    background-color: #FFD352;
+                    border: 2px dashed #5a2b3c;
+                    border-radius: 10px;
 
-                //     &__info{
-                //         font-size: 12px;
-                //         font-family: "scp-light";
-                //     }
-                // }
+                    .lista{
+                        
+                        &__titulo{
+                            font-size: 14px;
+                            font-family: "scp-medium";
+                        }
+    
+                        &__info{
+                            font-size: 14px;
+                            font-family: "scp-light";
+                        }
+                    }
+
+                }
 
             }        
             // Fin Estilo item individual    
         }
         // Fin Productos a la venta
+
+        .error{
+            width: 100%;
+            height: 500px;
+
+            @include resinaLight(30px,#FFD352);
+        }
     }
     // Fin Contenido de Playlists.html
 
@@ -379,6 +443,7 @@ img{
             }
 
             .contenedorItemsCarrito{
+                min-height: 350px;
 
                 .itemCarrito{
                     height: auto;
@@ -592,13 +657,20 @@ img{
             justify-content: center;
             align-items: center;
 
-            input{
+            #mail{
                 width: 190px;
                 height: 35px;
-                border: 1px solid #FFD352;
+                border: 1px solid #E2AE28;
                 background-color: #6B384D;
                 padding-left: 15px;
                 @include scpMedium(90%,#E2AE28);
+            }
+            #mail::placeholder{
+                color: #E2AE28;
+                opacity: 0.6;
+            }
+            #mail:focus{
+                border: 2px solid #FFD352;
             }
 
             .btn{
@@ -815,6 +887,7 @@ img{
                 }
 
                 .contenedorItemsCarrito{
+                    min-height: 700px;
                     
                     .itemCarrito{
                         border-width: 2px;
@@ -842,7 +915,7 @@ img{
                     }
 
                     .sinProductos{
-                        height: 500px;
+                        height: 700px;
                         font-size: 30px;
                     }
                 }

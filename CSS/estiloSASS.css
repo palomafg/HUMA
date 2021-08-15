@@ -194,6 +194,12 @@ img {
     .contenido .home__nuestrasPL .listasNPL #togasItemH {
       background-color: #854e66;
       color: #FFD352; }
+    .contenido .home__nuestrasPL .error {
+      width: 100%;
+      height: 500px;
+      font-family: "Resina-Light";
+      font-size: 30px;
+      color: #FFD352; }
   .contenido .playlists {
     width: 100%;
     height: auto;
@@ -209,6 +215,11 @@ img {
       font-family: "Resina-Light";
       font-size: 20px;
       color: #FFD352; }
+    .contenido .playlists .buscador #busqueda::placeholder {
+      color: #FFD352;
+      opacity: 0.6; }
+    .contenido .playlists .buscador #busqueda:focus {
+      border: 2px solid #ffe597; }
     .contenido .playlists .buscador .btnBuscar {
       font-size: 130%;
       color: #FFD352; }
@@ -245,6 +256,11 @@ img {
         .contenido .playlists .articulos #daleItem .sumarCarrito:hover {
           background-color: #854e66;
           color: #FFD352; }
+        .contenido .playlists .articulos #daleItem .verMas {
+          color: #FFD352; }
+        .contenido .playlists .articulos #daleItem .colapsaLista {
+          background-color: #854e66;
+          border-color: #FFD352; }
       .contenido .playlists .articulos #itsBBItem {
         background-color: #FFD352;
         color: #5a2b3c; }
@@ -257,6 +273,11 @@ img {
         .contenido .playlists .articulos #togasItem .sumarCarrito:hover {
           background-color: #854e66;
           color: #FFD352; }
+        .contenido .playlists .articulos #togasItem .verMas {
+          color: #FFD352; }
+        .contenido .playlists .articulos #togasItem .colapsaLista {
+          background-color: #854e66;
+          border-color: #FFD352; }
       .contenido .playlists .articulos .item {
         border-radius: 10px;
         background-color: #FFD352;
@@ -302,6 +323,37 @@ img {
         .contenido .playlists .articulos .item .data .sumarCarrito:hover {
           background-color: #FFD352;
           color: #6B384C; }
+        .contenido .playlists .articulos .item .data .verMas {
+          width: auto;
+          height: auto;
+          text-align: center;
+          font-family: "scp-medium";
+          font-size: 15px;
+          color: #5a2b3c;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size .8s; }
+        .contenido .playlists .articulos .item .data .verMas:hover, .contenido .playlists .articulos .item .data .verMas:focus {
+          background-size: 100% 2px; }
+        .contenido .playlists .articulos .item .colapsaLista {
+          margin-bottom: 80px;
+          background-color: #FFD352;
+          border: 2px dashed #5a2b3c;
+          border-radius: 10px; }
+          .contenido .playlists .articulos .item .colapsaLista .lista__titulo {
+            font-size: 14px;
+            font-family: "scp-medium"; }
+          .contenido .playlists .articulos .item .colapsaLista .lista__info {
+            font-size: 14px;
+            font-family: "scp-light"; }
+    .contenido .playlists .error {
+      width: 100%;
+      height: 500px;
+      font-family: "Resina-Light";
+      font-size: 30px;
+      color: #FFD352; }
   .contenido .carrito {
     background-image: url("../Multimedia/fondoCarrito.jpg");
     background-repeat: repeat; }
@@ -309,54 +361,56 @@ img {
       font-family: "Resina-Regular";
       font-size: 25px;
       color: #fadc80; }
-    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
-      height: auto;
-      background-color: #44202d;
-      border: 1px solid #fadc80;
-      border-radius: 5px; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPortada {
-        border-radius: 30%; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito {
+      min-height: 350px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
         height: auto;
-        width: auto;
-        margin-bottom: 10px;
-        font-family: "Resina-Regular";
-        font-size: 17px;
-        color: #fadc80;
-        text-align: center; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
-        height: auto;
-        width: auto;
-        margin-bottom: 10px;
-        font-family: "Resina-Light";
-        font-size: 12px;
-        color: #fadc80; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
-        height: auto;
-        width: auto;
-        font-family: "scp-medium";
-        font-size: 12px;
-        color: #fadc80; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
-        height: 30px;
-        width: 45px;
-        padding: 5px 7px;
         background-color: #44202d;
-        font-family: "scp-medium";
-        font-size: 13px;
-        color: #fadc80;
-        border: 1px solid #fadc80; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito .botonBorrar {
-        height: 30px;
-        width: 30px;
-        font-size: 20px;
-        color: #fadc80;
-        text-align: center; }
-    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
-      height: 350px;
-      font-family: "Resina-Light";
-      font-size: 25px;
-      color: #fadc80; }
+        border: 1px solid #fadc80;
+        border-radius: 5px; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPortada {
+          border-radius: 30%; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
+          height: auto;
+          width: auto;
+          margin-bottom: 10px;
+          font-family: "Resina-Regular";
+          font-size: 17px;
+          color: #fadc80;
+          text-align: center; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
+          height: auto;
+          width: auto;
+          margin-bottom: 10px;
+          font-family: "Resina-Light";
+          font-size: 12px;
+          color: #fadc80; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
+          height: auto;
+          width: auto;
+          font-family: "scp-medium";
+          font-size: 12px;
+          color: #fadc80; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
+          height: 30px;
+          width: 45px;
+          padding: 5px 7px;
+          background-color: #44202d;
+          font-family: "scp-medium";
+          font-size: 13px;
+          color: #fadc80;
+          border: 1px solid #fadc80; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito .botonBorrar {
+          height: 30px;
+          width: 30px;
+          font-size: 20px;
+          color: #fadc80;
+          text-align: center; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
+        height: 350px;
+        font-family: "Resina-Light";
+        font-size: 25px;
+        color: #fadc80; }
     .contenido .carrito .carrito__cierre .cierre {
       border-top: 1px solid #fadc80;
       height: 60px;
@@ -463,15 +517,20 @@ img {
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .pie__suscribir--email input {
+      .pie__suscribir--email #mail {
         width: 190px;
         height: 35px;
-        border: 1px solid #FFD352;
+        border: 1px solid #E2AE28;
         background-color: #6B384D;
         padding-left: 15px;
         font-family: "scp-medium";
         font-size: 90%;
         color: #E2AE28; }
+      .pie__suscribir--email #mail::placeholder {
+        color: #E2AE28;
+        opacity: 0.6; }
+      .pie__suscribir--email #mail:focus {
+        border: 2px solid #FFD352; }
       .pie__suscribir--email .btn {
         width: 35px;
         height: 35px;
@@ -584,24 +643,26 @@ img {
       font-family: "Resina-Regular";
       font-size: 60px;
       color: #fadc80; }
-    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
-      border-width: 2px;
-      border-radius: 7px; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
-        margin-bottom: 15px;
-        font-size: 20px; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
-        margin-bottom: 15px;
-        font-size: 17px; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
-        font-size: 17px; }
-      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
-        height: 27px;
-        width: 55px;
-        font-size: 17px; }
-    .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
-      height: 500px;
-      font-size: 30px; }
+    .contenido .carrito .carrito__cierre .contenedorItemsCarrito {
+      min-height: 700px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarrito {
+        border-width: 2px;
+        border-radius: 7px; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoNombre {
+          margin-bottom: 15px;
+          font-size: 20px; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoFormato {
+          margin-bottom: 15px;
+          font-size: 17px; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoPrecio {
+          font-size: 17px; }
+        .contenido .carrito .carrito__cierre .contenedorItemsCarrito .itemCarritoCantidad {
+          height: 27px;
+          width: 55px;
+          font-size: 17px; }
+      .contenido .carrito .carrito__cierre .contenedorItemsCarrito .sinProductos {
+        height: 700px;
+        font-size: 30px; }
     .contenido .carrito .carrito__cierre .cierre {
       border-width: 2px;
       height: 150px; }

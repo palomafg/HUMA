@@ -80,12 +80,12 @@
         <div class="playlists pt-3 container-fluid row justify-content-center align-items-center">
             <!-- Buscador -->
             <form action="" class="buscador col-12 my-4 my-lg-5 d-flex justify-content-center">
-                <input id="busqueda" class="mx-2 rounded-pill" type="text" placeholder="Buscar playlist...">
+                <input id="busqueda" class="mx-2 form-control rounded-pill" type="text" placeholder="Buscar playlist...">
                 <button id="cancelar" class="mx-3 p-1 btn btnBuscar rounded-circle" type="button" aria-label="Cancelar"><i class="far fa-times-circle"></i></button>
             </form>
 
             <!-- Filtro por duración -->
-            <form class="col-10 col-md-5 col-lg-4 mx-4 my-3 my-lg-4">
+            <form class="col-10 col-md-5 col-lg-4 mx-4 my-4 my-lg-4">
                 <select id="fxD" class="form-select rounded-pill" aria-label="Filtrar por duración...">
                     <option value="0" selected>Filtrar por duración...</option>
                     <option value="1">Shortplay</option>
@@ -95,7 +95,7 @@
             </form>
 
             <!-- Ordenar por... -->
-            <form class="col-10 col-md-5 col-lg-4 mx-4 my-3 my-lg-4">
+            <form class="col-10 col-md-5 col-lg-4 mx-4 my-4 my-lg-4">
                 <select id="ordenar" class="form-select rounded-pill" aria-label="Ordenar por...">
                     <option value="0" selected>Ordenar por...</option>
                     <option value="1">A - Z</option>
@@ -143,7 +143,7 @@
                 <p class="pie__suscribir--title mb-2">Suscribite al Newsletter!</p>
 
                 <div class="pie__suscribir--email">
-                    <input class="rounded-pill" type="text" placeholder="Tu email..." aria-label="email" aria-describedby="email">
+                    <input id="mail" class="rounded-pill form-control" type="text" placeholder="Tu email..." aria-label="email" aria-describedby="email">
                     <button class="btn btnHN rounded-circle" type="button" id="email"><i id="suscribe" class="fas fa-envelope-open-text"></i></button>
                 </div>
             </div>
