@@ -176,6 +176,17 @@
 
                         datos.appendChild(verMas);
 
+                        // Escuchar BOTON (te lleva a spotify/youtube)
+                        let escuchar = document.createElement("button");
+                        escuchar.setAttribute("class","btn escuchar");
+
+                            let link = document.createElement("a");
+                            link.setAttribute("href",element.link);
+                            link.innerHTML = '<i class="fas fa-headphones"></i> ESCUCHAR';
+                            escuchar.appendChild(link);
+
+                        datos.appendChild(escuchar);
+
                     item.appendChild(datos);
 
                     // Lista

@@ -261,6 +261,8 @@ img {
         .contenido .playlists .articulos #daleItem .colapsaLista {
           background-color: #854e66;
           border-color: #FFD352; }
+        .contenido .playlists .articulos #daleItem .escuchar a {
+          color: #FFD352; }
       .contenido .playlists .articulos #itsBBItem {
         background-color: #FFD352;
         color: #5a2b3c; }
@@ -278,6 +280,8 @@ img {
         .contenido .playlists .articulos #togasItem .colapsaLista {
           background-color: #854e66;
           border-color: #FFD352; }
+        .contenido .playlists .articulos #togasItem .escuchar a {
+          color: #FFD352; }
       .contenido .playlists .articulos .item {
         border-radius: 10px;
         background-color: #FFD352;
@@ -337,8 +341,17 @@ img {
           transition: background-size .8s; }
         .contenido .playlists .articulos .item .data .verMas:hover, .contenido .playlists .articulos .item .data .verMas:focus {
           background-size: 100% 2px; }
+        .contenido .playlists .articulos .item .data .escuchar {
+          width: auto;
+          height: auto; }
+        .contenido .playlists .articulos .item .data .escuchar a {
+          text-align: center;
+          text-decoration: none;
+          font-family: "scp-medium";
+          font-size: 15px;
+          color: #5a2b3c; }
         .contenido .playlists .articulos .item .colapsaLista {
-          margin-bottom: 80px;
+          margin-bottom: 120px;
           background-color: #FFD352;
           border: 2px dashed #5a2b3c;
           border-radius: 10px; }

@@ -284,6 +284,10 @@ img{
                     background-color: #854e66;
                     border-color: #FFD352;
                 }
+
+                .escuchar a{
+                    color: #FFD352;
+                }
             }
             #itsBBItem{
                 background-color: #FFD352;
@@ -308,6 +312,10 @@ img{
                 .colapsaLista{
                     background-color: #854e66;
                     border-color: #FFD352;
+                }
+
+                .escuchar a{
+                    color: #FFD352;
                 }
             }
             // Estilo item individual
@@ -394,10 +402,20 @@ img{
                         background-size: 100% 2px;
                     }
 
+                    .escuchar{
+                        width: auto;
+                        height: auto;
+                    }
+                    .escuchar a{
+                        text-align: center;
+                        text-decoration: none;
+                        @include scpMedium(15px,#5a2b3c);
+                    }
+
                 }
 
                 .colapsaLista{
-                    margin-bottom: 80px;
+                    margin-bottom: 120px;
                     background-color: #FFD352;
                     border: 2px dashed #5a2b3c;
                     border-radius: 10px;
